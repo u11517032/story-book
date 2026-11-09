@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>互動繪本</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="book-container">
+    <header class="header">
+      <h1 id="page-title">互動繪本</h1>
+      <div class="audio-controls">
+        <label><input type="checkbox" id="bgm-toggle" checked> 背景音樂</label>
+        <label><input type="checkbox" id="speech-toggle" checked> 朗讀語音</label>
+      </div>
+    </header>
+
+    <main class="viewer">
+      <button id="prev-btn" class="nav-btn">&lt; 上一頁</button>
+      <div class="image-wrapper">
+        <img id="book-img" src="" alt="繪本頁面">
+      </div>
+      <button id="next-btn" class="nav-btn">下一頁 &gt;</button>
+    </main>
+
+    <footer class="footer">
+      <span id="page-indicator">第 0 / 19 頁</span>
+    </footer>
+  </div>
+
+  <audio id="bgm-player" loop></audio>
+  <audio id="speech-player"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
